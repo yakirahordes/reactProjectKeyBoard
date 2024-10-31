@@ -1,11 +1,11 @@
 function Color ({color, setColor}) {
-    const colorArr = ["red", "blue", "green", "pink"];
+    const colorArr = ["red", "yellow", "green", "pink"];
     function handleColor(textColor){
        
         if (textColor === "red") {
             setColor("red");
-        } else if (textColor === "blue") {
-            setColor("blue");
+        } else if (textColor === "yellow") {
+            setColor("yellow");
         } else if (textColor === "green") {
             setColor("green");
         } else if (textColor === "pink") {
@@ -18,7 +18,7 @@ function Color ({color, setColor}) {
         <h1>Color</h1>
         {colorArr.map(textColor=>{
             return(
-                <button onClick={()=>handleColor(textColor)} >{textColor}</button>
+                <button className="colorButton" onClick={()=>handleColor(textColor)} style = {{background: textColor}}>{textColor}</button>
             )
         })}
         </>

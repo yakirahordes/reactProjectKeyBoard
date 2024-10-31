@@ -5,12 +5,12 @@ function Hebrew({ text, setText, fontSize, color }) {
         setText(prev => [...prev, newLetter])
     }
 
-        const letters = [" ", "א", "ב"];
+        const letters = [ "א", "ב", "ג", "ד", "ה", "ו", "ז", "ח", "ט", "י", "כ", "ל", "מ", "נ", "ס", "ע", "פ", "צ", "ק", "ר", "ש", "ת", "ף", "ץ", "ך", "ם", " ", ".", ",", "/", "?"];
     return (
         <>
         {letters.map((letter) => {
         return (
-            <button onClick = {() => handleAddLetter(letter)}>{letter===" "? "space" :letter}</button>
+            <button onClick = {() => handleAddLetter(letter)}>{letter===" "? "  space  " :letter}</button>
 
         )  })}
         </>

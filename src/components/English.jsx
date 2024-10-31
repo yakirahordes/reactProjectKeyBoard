@@ -15,12 +15,12 @@ function English({ text, setText, fontSize, color, changeCase }) {
         setText(prev => [...prev, newLetter])
     }
 
-        const letters = [" ","a", "b"];
+        const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " ", ".", ",", "/", "?"];
     return (
         <>
         {letters.map((letter) => {
         return (
-            <button onClick = {() => handleAddLetter(letter)}>{letter===" "? "space" :letter}</button>
+            <button onClick = {() => handleAddLetter(letter)}>{letter===" "? "  space  " :letter}</button>
 
         )  })}
         </>
@@ -28,5 +28,3 @@ function English({ text, setText, fontSize, color, changeCase }) {
 }
 
 export default English;
-
-// (changeCase==='uppercase' ? letter.toUpperCase(): letter.toLowerCase());

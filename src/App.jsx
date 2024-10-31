@@ -11,7 +11,7 @@ import Special from './components/Special'
 function App() {
   const [text, setText] = useState([]);
   const [boolean, setBoolean] = useState(true);
-  const [fontSize, setFontSize] = useState('10px')
+  const [fontSize, setFontSize] = useState('15px')
   const [color, setColor] = useState('black')
   const [textCase, setTextCase] = useState('')
   const [changeCase, setChangeCase] = useState('lowercase')
