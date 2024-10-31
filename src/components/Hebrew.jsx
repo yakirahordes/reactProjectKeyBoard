@@ -1,9 +1,9 @@
-function Hebrew({ text, setText, fontSize, color,last, setLast }) {
+function Hebrew({ setText, fontSize, color, setLast }) {
 
     function handleAddLetter(letter) {
         let newLetter = <span style = {{fontSize: fontSize, color: color}}>{letter}</span>    
         setText(prev => [...prev, newLetter])
-        setLast(newLetter);  
+        setLast(prev => [...prev, {status: 'added', value: newLetter}]);  
     }
 
         const letters = [ "א", "ב", "ג", "ד", "ה", "ו", "ז", "ח", "ט", "י", "כ", "ל", "מ", "נ", "ס", "ע", "פ", "צ", "ק", "ר", "ש", "ת", "ף", "ץ", "ך", "ם", " ", ".", ",", "/", "?"];

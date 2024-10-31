@@ -1,4 +1,4 @@
-function Size ({fontSize, setFontSize}) {
+function Size ({setFontSize}) {
     const sizeArr = [12, 14, 16, 18];
     function handleSize(size){
        

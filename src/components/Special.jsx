@@ -1,6 +1,8 @@
-function Special({ textCase, setTextCase, setText, setChangeCase }) {
+function Special({setTextCase, setText, text, setLast}) {
     function handleClearAll() {
         setText([]);
+        setLast(prev => [...prev, {status: 'clear', value: text}]);  
+
     }
     function handleUpperAll() {  
         setTextCase('uppercase')

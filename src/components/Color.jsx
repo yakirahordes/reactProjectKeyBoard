@@ -1,4 +1,4 @@
-function Color ({color, setColor}) {
+function Color ({setColor}) {
     const colorArr = ["red", "yellow", "green", "pink"];
     function handleColor(textColor){
        
