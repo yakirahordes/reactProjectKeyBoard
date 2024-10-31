@@ -20,8 +20,9 @@ function English({ text, setText, fontSize, color, changeCase }) {
         <>
         {letters.map((letter) => {
         return (
-            <button onClick = {() => handleAddLetter(letter)}>{letter===" "? "  space  " :letter}</button>
-
+            <div>
+            <button onClick = {() => handleAddLetter(letter)}>{letter===" "? "space" :letter}</button>
+            </div>
         )  })}
         </>
     )

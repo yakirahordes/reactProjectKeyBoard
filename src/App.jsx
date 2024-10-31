@@ -15,11 +15,12 @@ function App() {
   const [color, setColor] = useState('black')
   const [textCase, setTextCase] = useState('')
   const [changeCase, setChangeCase] = useState('lowercase')
+  const [last, setLast] = useState()
   return (
     <>
       <Input text = {text} textCase={textCase}/>
-      {(boolean) ? <Hebrew text = {text} setText = {setText} fontSize = {fontSize} color = {color} /> : <English text = {text} setText = {setText} fontSize = {fontSize} color = {color} changeCase = {changeCase} />}
-      <Language boolean={boolean} setBoolean={setBoolean} changeCase = {changeCase} setChangeCase = {setChangeCase} text={text} setText = {setText} />
+      {(boolean) ? <Hebrew text = {text} setText = {setText} fontSize = {fontSize} color = {color} last = {last} setLast={setLast}/> : <English text = {text} setText = {setText} fontSize = {fontSize} color = {color} changeCase = {changeCase} />}
+      <Language boolean={boolean} setBoolean={setBoolean} changeCase = {changeCase} setChangeCase = {setChangeCase} text={text} setText = {setText} last={last} setLast={setLast}/>
       <Size fontSize = {fontSize} setFontSize = {setFontSize} />
       <Color color = {color} setColor = {setColor} />
       <Special textCase = {textCase} setTextCase = {setTextCase} setText = {setText} setChangeCase = {setChangeCase} />
